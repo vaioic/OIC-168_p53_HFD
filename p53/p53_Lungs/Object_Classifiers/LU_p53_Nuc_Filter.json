@@ -16,11 +16,11 @@
         "DAPI: Min",
         "DAPI: Max",
         "DAPI: Std.Dev.",
-        "CD45: Mean",
-        "CD45: Median",
-        "CD45: Min",
-        "CD45: Max",
-        "CD45: Std.Dev."
+        "P53: Mean",
+        "P53: Median",
+        "P53: Min",
+        "P53: Max",
+        "P53: Std.Dev."
       ]
     },
     "normalizer": {

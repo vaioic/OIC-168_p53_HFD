@@ -5,15 +5,15 @@
     "featureExtractor": {
       "feature_extractor_type": "DefaultFeatureExtractor",
       "measurements": [
-        "CD45: Mean",
-        "CD45: Median",
-        "CD45: Min",
-        "CD45: Std.Dev.",
-        "ROI: 0.17 µm per pixel: CD45: Haralick Contrast (F1)",
-        "ROI: 0.17 µm per pixel: CD45: Haralick Sum of squares (F3)",
-        "ROI: 0.17 µm per pixel: CD45: Haralick Sum average (F5)",
-        "ROI: 0.17 µm per pixel: CD45: Haralick Sum entropy (F7)",
-        "ROI: 0.17 µm per pixel: CD45: Haralick Information measure of correlation 2 (F12)"
+        "P53: Mean",
+        "P53: Median",
+        "P53: Min",
+        "P53: Std.Dev.",
+        "ROI: 0.17 µm per pixel: P53: Haralick Contrast (F1)",
+        "ROI: 0.17 µm per pixel: P53: Haralick Sum of squares (F3)",
+        "ROI: 0.17 µm per pixel: P53: Haralick Sum average (F5)",
+        "ROI: 0.17 µm per pixel: P53: Haralick Sum entropy (F7)",
+        "ROI: 0.17 µm per pixel: P53: Haralick Information measure of correlation 2 (F12)"
       ]
     },
     "normalizer": {

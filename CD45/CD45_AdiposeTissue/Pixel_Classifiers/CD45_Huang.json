@@ -1,0 +1,61 @@
+{
+  "pixel_classifier_type": "OpenCVPixelClassifier",
+  "metadata": {
+    "inputPadding": 0,
+    "inputResolution": {
+      "pixelWidth": {
+        "value": 0.345,
+        "unit": "µm"
+      },
+      "pixelHeight": {
+        "value": 0.345,
+        "unit": "µm"
+      },
+      "zSpacing": {
+        "value": 1.0,
+        "unit": "z-slice"
+      },
+      "timeUnit": "SECONDS",
+      "timepoints": []
+    },
+    "inputWidth": 512,
+    "inputHeight": 512,
+    "inputNumChannels": 3,
+    "outputType": "CLASSIFICATION",
+    "outputChannels": [],
+    "classificationLabels": {
+      "1": {
+        "name": "Huang",
+        "color": [
+          15,
+          137,
+          216
+        ]
+      }
+    }
+  },
+  "op": {
+    "type": "data.op.channels",
+    "colorTransforms": [
+      {
+        "channelName": "CD45"
+      }
+    ],
+    "op": {
+      "type": "op.core.sequential",
+      "ops": [
+        {
+          "type": "op.filters.gaussian",
+          "sigmaX": 1.0,
+          "sigmaY": 1.0
+        },
+        {
+          "type": "op.threshold.constant",
+          "thresholds": [
+            462.5961
+          ]
+        }
+      ]
+    }
+  }
+}
